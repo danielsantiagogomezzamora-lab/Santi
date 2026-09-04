@@ -1,0 +1,304 @@
+/* ========================= CONFIGURACIÓN GENERAL ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ========================= MENÚ ========================= */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    z-index: 1000;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+/* ========================= INICIO ========================= */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 50px;
+    background: radial-gradient(circle at top left, #164e63, transparent 40%), radial-gradient(circle at bottom right, #312e81, transparent 40%), #0f172a;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    margin-bottom: 10px;
+    animation: aparecer 1s ease;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cbd5e1;
+    max-width: 650px;
+    margin-bottom: 30px;
+    animation: aparecer 1.5s ease;
+}
+
+.boton {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
+}
+
+/* ========================= SECCIONES ========================= */
+section {
+    padding: 100px 8%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.titulo span {
+    color: #38bdf8;
+}
+
+/* ========================= SOBRE MÍ ========================= */
+.sobre-mi {
+    background: #111827;
+    text-align: center;
+}
+
+.sobre-mi p {
+    max-width: 750px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+/* ========================= TARJETAS ========================= */
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-futbol,
+.tarjeta-programacion {
+    cursor: pointer;
+}
+
+.icono {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #cbd5e1;
+}
+
+.click {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #38bdf8 !important;
+}
+
+/* ========================= HISTORIAS ========================= */
+#historia-futbol,
+#historia-programacion {
+    display: none;
+}
+
+#historia-futbol {
+    background: radial-gradient(circle at top right, #14532d, transparent 35%), #111827;
+}
+
+#historia-programacion {
+    background: radial-gradient(circle at top left, #312e81, transparent 35%), #111827;
+}
+
+.historia {
+    max-width: 950px;
+    margin: auto;
+}
+
+.historia-intro {
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.historia-contenido {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.historia-contenido p {
+    color: #dbeafe;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.resaltado {
+    color: #38bdf8;
+    font-weight: bold;
+    background: rgba(56, 189, 248, 0.1);
+    padding: 3px 7px;
+    border-radius: 6px;
+}
+
+.torneo {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.cerrar {
+    display: block;
+    margin: 35px auto 0;
+}
+
+/* ========================= PROYECTOS ========================= */
+.proyectos {
+    background: #111827;
+}
+
+.proyecto {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #334155;
+}
+
+.proyecto h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* ========================= CONTACTO ========================= */
+.contacto {
+    text-align: center;
+}
+
+.contacto p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+/* ========================= FOOTER ========================= */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    border-top: 1px solid #334155;
+}
+
+/* ========================= ANIMACIÓN ========================= */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================= MÓVILES ========================= */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
+
+    .historia-contenido {
+        padding: 25px;
+    }
+}

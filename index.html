@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/index.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago.com | Mi página web</title>
+
+</head>
+
+<body> <!-- ========================= MENÚ ========================== -->
+    <nav>
+        <div class="logo"> Santiago.com </div>
+        <ul class="menu">
+            <li> <a href="#inicio">Inicio</a> </li>
+            <li> <a href="#sobre-mi">Sobre mí</a> </li>
+            <li> <a href="#intereses">Intereses</a> </li>
+            <li> <a href="#proyectos">Proyectos</a> </li>
+            <li> <a href="#contacto">Contacto</a> </li>
+        </ul>
+    </nav> <!-- ========================= INICIO ========================== -->
+    <header class="hero" id="inicio">
+        <h1> Bienvenido a <span>Santiago.com</span> </h1>
+        <p> Esta es mi página web. Empecé aprendiendo HTML y quién sabe hasta dónde pueda llegar con esto. 😎 </p> <a
+            href="#sobre-mi" class="boton"> Conocer más </a>
+    </header> <!-- ========================= SOBRE MÍ ========================== -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="titulo"> Sobre <span>mí</span> </h2>
+        <p> Soy un niño al que le llamó la atención crear páginas web. Esta página comenzó como un proyecto para
+            aprender HTML y poco a poco se fue convirtiendo en algo mucho más grande. Mi objetivo es seguir aprendiendo
+            programación y crear cosas cada vez más increíbles. 🚀 </p>
+    </section> <!-- ========================= INTERESES ========================== -->
+    <section id="intereses">
+        <h2 class="titulo"> Mis <span>intereses</span> </h2>
+        <div class="contenedor-tarjetas"> <!-- FÚTBOL -->
+            <div class="tarjeta tarjeta-futbol" onclick="mostrarFutbol()">
+                <div class="icono"> ⚽ </div>
+                <h3> Fútbol </h3>
+                <p> Una de las cosas que más me gusta. </p>
+                <p class="click"> 👆 Haz clic para conocer mi historia </p>
+            </div> <!-- PROGRAMACIÓN -->
+            <div class="tarjeta tarjeta-programacion" onclick="mostrarProgramacion()">
+                <div class="icono"> 💻 </div>
+                <h3> Programación </h3>
+                <p> Mi comienzo en el mundo del código. </p>
+                <p class="click"> 👆 Haz clic para conocer mi historia </p>
+            </div> <!-- VIDEOJUEGOS -->
+            <div class="tarjeta">
+                <div class="icono"> 🎮 </div>
+                <h3> Videojuegos </h3>
+                <p> También me gustan los videojuegos y descubrir cosas nuevas. </p>
+            </div> <!-- APRENDER -->
+            <div class="tarjeta">
+                <div class="icono"> 🚀 </div>
+                <h3> Aprender </h3>
+                <p> Siempre hay algo nuevo que aprender y experimentar. </p>
+            </div>
+        </div>
+    </section> <!-- ========================= HISTORIA DEL FÚTBOL ========================== -->
+    <section id="historia-futbol">
+        <div class="historia">
+            <h2 class="titulo"> ⚽ Mi historia con el <span>fútbol</span> </h2>
+            <p class="historia-intro"> Todo comenzó con algo tan sencillo como ver un partido de fútbol en televisión.
+            </p>
+            <div class="historia-contenido">
+                <p> Todo empezó con un partido de fútbol en televisión y me dieron ganas de jugar fútbol. Mis papás me
+                    vieron jugar en la cancha de mi conjunto y me dijeron que tenía talento. </p>
+                <p> Pero yo tuve que elegir entre karate o fútbol. Elegí fútbol y me metieron a mi primera escuela
+                    llamada <span class="resaltado">Santos FC</span>. </p>
+                <p> Ahí aprendí las cosas básicas y varios regates. Yo era el defensa central del equipo. </p>
+                <p> Luego el equipo ya me había enseñado todo lo básico y las reglas del fútbol, así que di el siguiente
+                    paso. </p>
+                <p> Fui a <span class="resaltado">Bahía Soccer</span> para probarme, pero no salió tan bien. Así que di
+                    el siguiente paso y me metieron a mi segunda escuela: <span class="resaltado">Pan de Azúcar</span>.
+                </p>
+                <p> Cuando llegué, comparado con los jugadores de mi nuevo equipo, era malísimo. 😅 Pero poco a poco,
+                    entrenamiento a entrenamiento, empecé a mejorar y a igualarles el nivel. </p>
+                <p> Nosotros entrenábamos en una cancha en el Anillo Vial, al frente de Makro, pero cerraron esas
+                    canchas y necesitábamos otra. </p>
+                <p> Entonces, en mi colegio había una cancha de pasto, la alquilamos y actualmente entrenamos ahí. </p>
+                <p> Después de un partido en el cual metí gol, aunque jugué mal, mi papá me habló y me despertó. Me
+                    abrió los ojos y desde ese momento mi nivel se fue hacia arriba en un verdadero
+                    <strong>boom</strong>. 🚀
+                </p>
+                <p> Actualmente cambié de posición. Juego de donde sea, pero casi siempre juego de extremo por derecha y
+                    por izquierda. </p>
+                <p> Ahora estamos participando en la <span class="torneo">Chiquifútbol</span> y haciendo goles en este
+                    torneo. </p>
+                <p> Este es el torneo en el que fueron descubiertos jugadores que posteriormente llegaron a representar
+                    a la Selección Colombia, como James Rodríguez y Juan Fernando Quintero. </p>
+                <p> Después de la primera fase, que es en Piedecuesta, iremos a Barbosa, cerca de la capital del país,
+                    Bogotá. </p>
+                <p> Luego de esa fase iremos a Bogotá a jugar la última fase. </p>
+                <p> ⚽🔥 <strong> Esta es mi historia hasta ahora, pero apenas estoy comenzando. </strong> </p>
+            </div> <button class="boton cerrar" onclick="cerrarFutbol()"> ← Volver a mis intereses </button>
+        </div>
+    </section> <!-- ========================= HISTORIA DE PROGRAMACIÓN ========================== -->
+    <section id="historia-programacion">
+        <div class="historia">
+            <h2 class="titulo"> 💻 Mi historia con la <span>programación</span> </h2>
+            <p class="historia-intro"> Todo comenzó con una clase de HTML que terminó convirtiéndose en una nueva
+                pasión. </p>
+            <div class="historia-contenido">
+                <p> Todo empezó el <span class="resaltado">27 de agosto de 2026</span>, cuando empezamos a crear código
+                    HTML. </p>
+                <p> Al principio simplemente estábamos aprendiendo cómo funcionaba el código, pero poco a poco me empezó
+                    a gustar. </p>
+                <p> Entonces hablé con mi papá, que es <span class="resaltado"> programador e ingeniero de sistemas
+                    </span>. </p>
+                <p> Él me enseñó sus proyectos y un montón de códigos. Ver todo lo que podía hacerse programando me
+                    llamó muchísimo la atención. </p>
+                <p> Después de ver sus proyectos pensé: </p>
+                <p style="text-align: center; font-size: 26px;"> <strong> "Voy a tomar la iniciativa para hacer una
+                        página". </strong> 🚀 </p>
+                <p> Y así fue como empecé a crear mi propia página web. </p>
+                <p> Después de aprender y probar diferentes cosas, terminé haciendo esta página: </p>
+                <p style="text-align: center; font-size: 30px;"> <span class="resaltado"> Santiago.com 💻🥰 </span> </p>
+                <p> Esta página representa mi comienzo en el mundo de la programación, y espero que sea solamente el
+                    principio de muchos proyectos más. </p>
+            </div> <button class="boton cerrar" onclick="cerrarProgramacion()"> ← Volver a mis intereses </button>
+        </div>
+    </section> <!-- ========================= PROYECTOS ========================== -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="titulo"> Mis <span>proyectos</span> </h2>
+        <div class="contenedor-tarjetas">
+            <div class="proyecto">
+                <h3> 🌐 Santiago.com </h3>
+                <p> Mi primera página web creada para aprender HTML, CSS y JavaScript. </p>
+            </div>
+            <div class="proyecto">
+                <h3> 🎮 Proyecto futuro </h3>
+                <p> Algún día quiero crear mi propio juego utilizando programación. </p>
+            </div>
+            <div class="proyecto">
+                <h3> 🚀 Próximamente... </h3>
+                <p> Este espacio está reservado para mis próximos proyectos. </p>
+            </div>
+        </div>
+    </section> <!-- ========================= CONTACTO ========================== -->
+    <section class="contacto" id="contacto">
+        <h2 class="titulo"> <span>Contacto</span> </h2>
+        <p> Gracias por visitar mi página web. </p> <button class="boton" onclick="mostrarMensaje()"> Haz clic aquí 😎
+        </button>
+        <p id="mensaje" style="margin-top: 25px;"> </p>
+    </section> <!-- ========================= FOOTER ========================== -->
+    <footer>
+        <p> © 2026 Santiago.com </p>
+        <p> Creado con HTML, CSS y JavaScript 💻 </p>
+    </footer>
+</body>
+
+</html>
